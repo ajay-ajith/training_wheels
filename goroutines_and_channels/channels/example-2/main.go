@@ -1,6 +1,6 @@
 // An example of using goroutines along with a channel
-// A goroutine producer will produce the N'th number in the series and writes it to the channel
-// The consumer will wait for M seconds before stopping the program
+// A goroutine producer will produce the N'th number of the fibonacci series and writes it to the channel
+// The consumer will wait for M seconds for the result and if result is not ready, it will stop the program
 
 package main
 
