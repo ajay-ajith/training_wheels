@@ -1,5 +1,8 @@
 // An example program demoing a worker pool concept
+// Worker instance takes an integer from a channel
+// It converts the integer to string and sends through the result channel
 
+//TODO remove consumer / producer from main goroutine to another goroutine
 package main
 
 import (
