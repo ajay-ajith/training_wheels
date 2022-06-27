@@ -13,15 +13,10 @@ func PrimeNumberGenerator(limit int) []int {
 		if item == 1 {
 			continue
 		} else {
+			primes = append(primes, index)
 			for i := index * 2; i < limit; i += index {
 				buffer[i] = 1
 			}
-		}
-	}
-
-	for i, val := range buffer {
-		if val == 0 {
-			primes = append(primes, i)
 		}
 	}
 
